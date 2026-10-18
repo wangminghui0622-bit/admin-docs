@@ -534,7 +534,7 @@ CREATE TABLE `mms_members`  (
   `avatar` varchar(512) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NULL DEFAULT '' COMMENT 'Avatar | 头像路径',
   `wechat_open_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NULL DEFAULT NULL COMMENT 'Wechat Open ID | 微信 Open ID',
   `expired_at` datetime NULL DEFAULT NULL COMMENT 'Member expired time | 会员到期时间',
-  `rank_id` bigint UNSIGNED NULL DEFAULT NULL,
+  `rank_id` bigint UNSIGNED NULL DEFAULT NULL COMMENT 'Member Rank ID | 会员等级ID',
   PRIMARY KEY (`id`) USING BTREE,
   UNIQUE INDEX `username`(`username` ASC) USING BTREE,
   UNIQUE INDEX `nickname`(`nickname` ASC) USING BTREE,
